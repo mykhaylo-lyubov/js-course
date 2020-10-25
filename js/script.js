@@ -1,10 +1,41 @@
 'use strict';
 
-const valueA = '5';
-console.log(valueA);
-console.log(Number(valueA));
-console.log(typeof Number(valueA));
+const countryName = 'КитаЙ';
 
-const valueB = 'random string';
-console.log(Number(valueB));
-console.log(typeof Number(valueB));
+const CANCELED_BY_USER = 'Отменено пользователем!';
+const NO_DELIVERY = 'В выбранную страну доставка недоступна.';
+const CHINA = 'Китай';
+const AUSTRALIA = 'Австралия';
+const INDIA = 'Индия';
+const JAMAICA = 'Ямайка';
+let message;
+let price;
+let country;
+
+if (countryName === null) {
+  message = CANCELED_BY_USER;
+} else {
+  country = countryName[0].toUpperCase() + countryName.slice(1).toLowerCase();
+  switch (country) {
+    case CHINA:
+      price = 100;
+      break;
+    case AUSTRALIA:
+      price = 170;
+      break;
+    case INDIA:
+      price = 80;
+      break;
+    case JAMAICA:
+      price = 120;
+      break;
+    default:
+      message = NO_DELIVERY;
+  }
+}
+
+if (price > 0) {
+  message = `Доставка в ${country} будет стоить ${price} кредитов`;
+}
+
+console.log(message);
