@@ -1,3 +1,4 @@
+'use strict';
 function formatString(string, maxLength = 40) {
   let newString = '';
   if (string.length <= maxLength) {
