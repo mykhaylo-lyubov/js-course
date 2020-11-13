@@ -1,8 +1,15 @@
-const hotel = {
-  name: 'resort',
-  stars: 5,
-  capacity: 100,
-};
+function User() {
+  var username, password;
+  function doLogin(user, pw) {
+    username = user;
+    password = pw;
+  }
+  var publicAPI = {
+    login: doLogin,
+  };
+  return publicAPI;
+}
 
-const { stars } = hotel;
-console.log(stars);
+var fred = User();
+
+console.log(fred.login('fred', '12Battery34!'));
