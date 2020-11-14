@@ -34,7 +34,7 @@ repeatConsoleLog(4);  --*/
 
 // console.log(labels);
 
-const filter = function (array, test) {
+/*  const filter = function (array, test) {
   const filteredElements = [];
   for (const element of array) {
     console.log(element);
@@ -57,7 +57,7 @@ const freshFruits = filter(fruits, function (fruit) {
   return fruit.isFresh;
 });
 
-console.log(freshFruits);
+console.log(freshFruits);  ---*/
 
 // const bar = function () {
 //   console.log('bar');
