@@ -74,3 +74,112 @@ console.log(freshFruits);  ---*/
 // };
 
 // foo();
+
+// const createCounter = function () {
+//   let privateValue = 0;
+//   const increment = function () {
+//     privateValue += 1;
+//     console.log(privateValue);
+//   };
+//   return {
+//     increment,
+//   };
+// };
+
+// const counterA = createCounter();
+// counterA.increment();
+// counterA.increment();
+// counterA.increment();
+// counterA.increment();
+
+// console.dir(counterA.increment);
+
+// const makeShef = function (name) {
+//   return function makeDish(dish) {
+//     console.log(`${name} is cooking ${dish}`);
+//   };
+// };
+
+// const mango = makeShef('Mango');
+// mango('pie');
+
+// console.dir(mango);
+
+// var x = 10;
+// function foo(a) {
+//   var b = 20;
+//   console.log('a = ', a);
+//   console.log('b = ', b);
+//   function bar(c) {
+//     console.log('c = ', c);
+//     var d = 30;
+//     return boop(x + a + b + c + d);
+//   }
+
+//   function boop(e) {
+//     console.log(e);
+//     return e * -1;
+//   }
+
+//   return bar;
+// }
+
+// var moar = foo(5);
+// moar(10);
+
+// var x = 10;
+
+// function foo() {
+//   var y = x + 5;
+//   return y;
+// }
+
+// function bar() {
+//   var x = 2;
+//   return foo();
+// }
+
+// function main() {
+//   foo(); // Static scope: 15; Dynamic scope: 15
+//   bar(); // Static scope: 15; Dynamic scope: 7
+//   return 0;
+// }
+
+// const showThis = function () {
+//   console.log('this in showThis: ', this);
+// };
+
+// // showThis();
+
+// const user = {
+//   name: 'Mango',
+//   showContext: showThis,
+// };
+
+// user.showContext();
+
+// const hotel = {
+//   name: 'Resort hotel',
+//   showThis() {
+//     console.log(this);
+//   },
+// };
+
+// const fn = function (callback) {
+//   callback();
+// };
+
+// fn(hotel.showThis);
+
+// const greet = function (guest, stars) {
+//   return `Dear ${guest}, welcome to ${stars}-stars ${this.name} !`;
+// };
+
+// const hotel = { name: 'Hilton' };
+// const motel = { name: 'Inn' };
+
+// console.log(greet.call(hotel, 'Mike', 5));
+// console.log(greet.call(motel, 'Mike', 3));
+
+// console.log(greet.apply(hotel, ['Mike', 4]));
+// console.log(greet.apply(motel, ['Jack', 2]));
