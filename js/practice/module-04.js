@@ -183,3 +183,57 @@ console.log(freshFruits);  ---*/
 
 // console.log(greet.apply(hotel, ['Mike', 4]));
 // console.log(greet.apply(motel, ['Jack', 2]));
+
+//===========================
+// const greet = function (a) {
+//   console.log(`Hello ${a}`);
+// };
+
+// const greetWithName = function (callback) {
+//   const name = 'Mike';
+//   callback(name);
+// };
+// // greetWithName(greet);
+
+// /*
+// Environment - Global
+// Record - null
+// Parent - null
+// */
+// const x = 5;
+// /*
+// Environment - Global
+// Record - x=5
+// Parent - null
+// */
+// const y = 1;
+// /*
+// Environment - Global
+// Record - x=5, y = 1
+// Parent - null
+// */
+
+// const foo = function (z) {
+//   /*
+// Environment - foo
+// Record - z = 20
+// Parent - Global
+// */
+
+//   const x = 90;
+//   /*
+// Environment - foo
+// Record - z = 20, x = 90
+// Parent - Global
+// */
+
+//   console.log(x + y + z);
+// };
+
+// /*
+// Environment - Global
+// Record - x = 5, y = 1, foo = f
+// Parent - null
+// */
+
+// foo(20);
