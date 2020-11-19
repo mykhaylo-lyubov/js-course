@@ -237,3 +237,12 @@ console.log(freshFruits);  ---*/
 // */
 
 // foo(20);
+
+let a = 2;
+
+(function IIFE() {
+  let a = 3;
+  console.log('IIFE a = ', a);
+})();
+
+console.log('Global a = ', a);
