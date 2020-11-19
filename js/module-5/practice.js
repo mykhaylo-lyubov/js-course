@@ -33,18 +33,32 @@
 // const inn = new Hotel('Holiday Inn', 4, 200);
 // console.log(inn, motel);
 
-const Manager = function (name = '', sales = 0) {
-  this.name = name;
-  this.sales = sales;
-  this.sell = function (product) {
-    this.sales += 1;
-    return `Manager ${this.name} has been sold ${product} !`;
-  };
-};
+// const Manager = function (name = '', sales = 0) {
+//   this.name = name;
+//   this.sales = sales;
+//   this.sell = function (product) {
+//     this.sales += 1;
+//     return `Manager ${this.name} has been sold ${product} !`;
+//   };
+// };
 
-const mango = new Manager('Mango', 4);
-console.log(mango.sales);
-console.log(mango.sell('TV'));
-console.log(mango.sales);
-console.log(mango.sell('DVD'));
-console.log(mango.sales);
+// const mango = new Manager('Mango', 4);
+// console.log(mango.sales);
+// console.log(mango.sell('TV'));
+// console.log(mango.sales);
+// console.log(mango.sell('DVD'));
+// console.log(mango.sales);
+
+// const Guest = function (name, room) {
+//   this.name = name;
+//   this.room = room;
+// };
+// Guest.prototype.showGuestInfo = function () {
+//   console.log(`name: ${this.name}, room: ${this.room}`);
+// };
+
+// const mango = new Guest('mango', 10);
+
+// const poly = new Guest('poly', 20);
+// mango.showGuestInfo();
+// poly.showGuestInfo();
