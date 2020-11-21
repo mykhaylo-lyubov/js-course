@@ -62,3 +62,10 @@
 // const poly = new Guest('poly', 20);
 // mango.showGuestInfo();
 // poly.showGuestInfo();
+
+const animal = { eats: true, barks: true };
+// const dog = { barks: true };
+const dog = Object.create(animal);
+
+console.log(dog.barks);
+console.log(dog.eats);
