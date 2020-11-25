@@ -63,9 +63,47 @@
 // mango.showGuestInfo();
 // poly.showGuestInfo();
 
-const animal = { eats: true, barks: true };
-// const dog = { barks: true };
-const dog = Object.create(animal);
+// const animal = { eats: true, barks: true };
+// // const dog = { barks: true };
+// const dog = Object.create(animal);
 
-console.log(dog.barks);
-console.log(dog.eats);
+// console.log(dog.barks);
+// console.log(dog.eats);
+
+//  prototypes
+// const Hero = function (name, xp) {
+//   this.name = name;
+//   this.xp = xp;
+// };
+
+// Hero.prototype.gainXp = function (amount) {
+//   console.log(`${this.name} gained ${amount} experience points`);
+//   this.xp += amount;
+// };
+
+// const Warrior = function (name, xp, weapon) {
+//   Hero.call(this, name, xp);
+//   this.weapon = weapon;
+// };
+
+// Warrior.prototype.attack = function () {
+//   console.log(`${this.name} attacks with ${this.weapon}`);
+// };
+
+// Warrior.prototype = Object.create(Hero.prototype);
+// Warrior.prototype.constructor = Warrior;
+// Warrior.prototype.attack = function () {
+//   console.log(`${this.name} attacks with ${this.weapon}`);
+// };
+
+// const poly = new Warrior('Poly', 330, 'sword');
+// poly.gainXp(889);
+// console.log(poly);
+
+// const Manager = function (name, sales) {
+//   this.name = name;
+//   this.sales = sales;
+// };
+
+// const mango = new Manager('Mango', 10);
+// console.log(mango);
